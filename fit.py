@@ -1,26 +1,17 @@
 import json
 import requests
 
-api_url = "https://www.googleapis.com/fitness/v1/users/me/dataset:aggregate"
+api_url = "https://www.googleapis.com/fitness/v1/users/me/dataSources/raw:com.google.weight:com.picooc.international:/datasets/0-1622730223497000000"
 
-access_token = "ya29.a0AfH6SMAxstEWKJSjGjLDpfrQRpy4S9QOl49HZhOGW5Xm4DVI7zRfh5dNaerBA68ZyjJzKLahbzNsConGUgL_2YhEwPbkV_7coK33zHCqkGWC5F3VQJzw9g8nSgEVoJCiGSSwKMHIviZ0sehPN9xeYJHxEN1Q"
+access_token = "ya29.a0AfH6SMDl51guxlitl6JrQXqthtUphUJ3BqnIlKaBT-RGtGxR4C-TQ8zn94qSAf0tKxzcAw1eiroII9TqvkyNYrPSyT79r5e90o_n4vqmSwlXW7kS-mV7fnV1ezvab8bR3btQQq3X-bSwDMBbegusB0P3lmv9"
 
 headers = {
   "Authorization": "Bearer {}".format(access_token),
   "Content-Type": "application/json;encoding=utf-8"
   }
 
-body = {
-  "aggregateBy": [{
-    "dataTypeName": "com.google.weight",
-    "dataSourceId": "raw:com.google.weight:com.picooc.international:Weight"
-  }],
-  "bucketByTime": { "durationMillis": 86400000 },
-  "startTimeMillis": 1621655896231,
-  "endTimeMillis": 1622655896231
-}
+response = requests.get(api_url, headers=headers)
 
 
-response = requests.post(api_url, data=json.dumps(body), headers=headers)
 
 print(response.text)
