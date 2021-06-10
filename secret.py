@@ -1,0 +1,3 @@
+client_id = "a096d413-1717-4ff7-b280-e849edff0cfd"
+client_secret = "173c6f8a-c2e6-45b9-be7d-0be63830d5b2"
+Basic64 = 'YTA5NmQ0MTMtMTcxNy00ZmY3LWIyODAtZTg0OWVkZmYwY2ZkOjE3M2M2ZjhhLWMyZTYtNDViOS1iZTdkLTBiZTYzODMwZDViMg=='
