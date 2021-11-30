@@ -4,7 +4,7 @@ import csv
 
 api_url = "https://www.googleapis.com/fitness/v1/users/me/dataSources/derived:com.google.weight:com.google.android.gms:merge_weight/datasets/0-1622803690000000000"
 
-access_token = "ya29.a0AfH6SMBnbZt4Y4mYKjfrtWYVl14YUigQH8H3fQogCBlrbdX_VA5hUgzMWrv1A15dN9GnraG-lPt3NCRO_R1NowysUR3F2-SDijyxkTLt84RudJH-7HhKwjkinWjlhEGsX3TEnHE8PqE9KsemB7u_aBo1-l5O"
+access_token = ""
 
 headers = {
     "Authorization": "Bearer {}".format(access_token),
